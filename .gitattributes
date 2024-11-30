@@ -1,0 +1,16 @@
+# Forzar terminaciones de línea LF para archivos de texto
+* text=auto eol=lf
+
+# Archivos binarios no deben ser modificados
+*.exe binary
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# Scripts en Bash o lenguajes sensibles a terminaciones de línea deben usar LF
+*.sh text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+
+# Archivos de Windows (como batch) deben usar CRLF
+*.bat text eol=crlf
